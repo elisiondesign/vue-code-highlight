@@ -1,11 +1,14 @@
 {
   "name": "vue-codepen",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Daniel Charvát",
+  "email" : "dan@elision.design",
+  "url" : "https://elision.design/",
   "private": false,
+  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sindael/vue-codedepen"
+    "url": "git+https://github.com/elisiondesign/vue-codedepen"
   },
   "scripts": {
     "start": "vue-cli-service serve",

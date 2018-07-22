@@ -57,4 +57,4 @@ Additional options are:
 - `wrapperClass` - Class name of the div wrapping the iframe of the injected embed.
 
 ## License
-MIT.
+ISC.
