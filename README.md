@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Vue-Codepen
 This is a simple Vue component that enables to embed Codepen pens through the recommended HTML method.
 
@@ -58,3 +59,6 @@ Additional options are:
 
 ## License
 MIT.
+=======
+# vue-codedepen
+>>>>>>> e0105bfe79e2a4b7f853d8fc8abd9ab75bcb5c94
