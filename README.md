@@ -3,12 +3,13 @@ This is a simple Vue component that enables to embed Codepen pens through the re
 
 ## Usage
 1. From the pen of your choice, copy the embed HTML code.
-2. Reshape the HTML code into object - **key: property** (see example below).
+2. Reshape the HTML code into an object - **key: property** (see example below).
 3. Pass the object to the `codepen` component.
 
 
 ## Example
-This example uses a [single file component](https://vuejs.org/v2/guide/single-file-components.html) concept. See the demo [here](https://elisiondesign.github.io/vue-codepen/).
+This example uses a [single file component](https://vuejs.org/v2/guide/single-file-components.html) concept.
+See the working demo [here](https://elisiondesign.github.io/vue-codepen/).
 
 ```vue
 <template>
@@ -57,4 +58,4 @@ Additional options are:
 - `wrapperClass` - Class name of the div wrapping the iframe of the injected embed.
 
 ## License
-ISC.
+ISC
