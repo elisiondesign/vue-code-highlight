@@ -8,7 +8,7 @@ This is a simple Vue component that enables to embed Codepen pens through the re
 
 
 ## Example
-This example uses a [single file component](https://vuejs.org/v2/guide/single-file-components.html) concept. See the [here](https://elisiondesign.github.io/vue-codepen/).
+This example uses a [single file component](https://vuejs.org/v2/guide/single-file-components.html) concept. See the demo [here](https://elisiondesign.github.io/vue-codepen/).
 
 ```vue
 <template>
