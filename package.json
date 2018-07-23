@@ -2,8 +2,8 @@
   "name": "vue-codepen",
   "version": "0.2.0",
   "author": "Daniel Charvát",
-  "email" : "dan@elision.design",
-  "url" : "https://elision.design/",
+  "email": "dan@elision.design",
+  "url": "https://elision.design/",
   "private": false,
   "license": "ISC",
   "repository": {
@@ -12,9 +12,13 @@
   },
   "scripts": {
     "start": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --dest demo",
+    "build-bundle": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config rollup.config.js --format umd --file dist/vue-codepen.umd.js",
+    "build:es": "rollup --config rollup.config.js --format es --file dist/vue-codepen.esm.js",
+    "build:unpkg": "rollup --config rollup.config.js --format iife --file dist/vue-codepen.min.js",
     "lint": "vue-cli-service lint",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "deploy": "git subtree push --prefix demo origin gh-pages"
   },
   "dependencies": {
     "vue": "^2.5.16"
@@ -23,15 +27,23 @@
     "@vue/cli-plugin-babel": "^3.0.0-rc.5",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.5",
     "@vue/cli-service": "^3.0.0-rc.5",
+    "rollup": "^0.57.1",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-vue": "^3.0.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
     "vue-template-compiler": "^2.5.16"
   },
-  "main": "src/Codepen.vue",
+  "main": "dist/vue-codepen.umd.js",
+  "module": "dist/vue-codepen.esm.js",
+  "unpkg": "dist/vue-codepen.min.js",
+  "browser": {
+    "./sfc": "src/Codepen.vue"
+  },
   "keywords": [
-    "vue",
+    "Vue",
     "Codepen",
-    "embedded pens"
+    "Embedded pens"
   ],
   "eslintConfig": {
     "root": true,
