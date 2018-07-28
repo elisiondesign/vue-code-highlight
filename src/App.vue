@@ -1,51 +1,66 @@
 <template>
   <div id="app">
-    <codepen :options="codepenInput" />
+    <pre class="language-javascript">
+      <code>
+        let isPalindrome = (word) => {
+          let [length, result] = [word.length, true];
+
+          for (let i = 0; i &lt; length / 2; i++) {
+            if (word[i] !== word[length - 1 - i]) result = false;
+          }
+          return result;
+        }
+
+        module.exports = isPalindrome;
+      </code>
+    </pre>
+
+    <!-- <code-highlight>
+      let isPalindrome = (word) => {
+          let [length, result] = [word.length, true];
+
+          for (let i = 0; i &lt; length / 2; i++) {
+            if (word[i] !== word[length - 1 - i]) result = false;
+          }
+          return result;
+        }
+
+        module.exports = isPalindrome;
+    </code-highlight> -->
   </div>
 </template>
 
 <script>
-import Codepen from './Codepen.vue';
+import Prism from 'prismjs';
+import CodeHighlight from './CodeHighlight.vue';
 
 export default {
   name: 'app',
   components: {
-    Codepen,
+    CodeHighlight,
   },
   data() {
-    return {
-      codepenInput: {
-        'data-height': '100%',
-        'data-theme-id': 'dark',
-        'data-slug-hash': 'JyxKMg',
-        'data-default-tab': 'result',
-        'data-user': 'sindael',
-        'data-embed-version': 2,
-        'data-pen-title': 'Fullscreen image gallery using Wallop, Greensock and Flexbox',
-        placeholder: `
-          See the Pen <a href="https://codepen.io/sindael/pen/JyxKMg/">here</a>.
-          `,
-        wrapperClass: 'codepen-embed',
-      },
-    };
+    return {};
   },
 };
 </script>
+
 <style>
 body {
+  margin: 0;
   display: flex;
-  align-items: center;
   height: 100vh;
-  width: 100vw;
+  justify-content: center;
+  align-items: center;
 }
-
-#app {
-  margin: auto;
-  width: 75%;
-  height: 75%;
-}
-
-.codepen-embed {
-  height: 100%;
-}
+  pre[class*="language-"] {
+    display: inline-block;
+    padding-right: 10em;
+    padding-top: 3rem;
+    border-radius: 6px;
+    background-image: url("./assets/window-controls.svg");
+    background-repeat: no-repeat;
+    background-position: 16px 16px;
+    box-shadow: 5px 5px 15px 0px rgba(50, 50, 50, 0.75);
+  }
 </style>

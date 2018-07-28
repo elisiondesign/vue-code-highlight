@@ -4,7 +4,7 @@ import buble from 'rollup-plugin-buble';
 export default {
   input: 'src/wrapper.js', // Path relative to package.json
   output: {
-    name: 'vueCodepen',
+    name: 'vueCodeHighlight',
     exports: 'named',
   },
   plugins: [

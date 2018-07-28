@@ -1,11 +1,11 @@
 // Import vue component
-import vueCodepen from './Codepen.vue';
+import vueHighlight from './CodeHighlight.vue';
 
 // Declare install function executed by Vue.use()
 export function install(Vue) {
   if (install.installed) return;
   install.installed = true;
-  Vue.component('VueCodepen', vueCodepen);
+  Vue.component('VueCodeHighlight', vueHighlight);
 }
 
 // Create module definition for Vue.use()
@@ -25,4 +25,4 @@ if (GlobalVue) {
 }
 
 // To allow use as module (npm/webpack/etc.) export component
-export default vueCodepen;
+export default vueHighlight;

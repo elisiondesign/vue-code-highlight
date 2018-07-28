@@ -1,26 +1,27 @@
 {
-  "name": "vue-codepen",
-  "version": "0.2.0",
-  "author": "Daniel Charvát",
-  "email": "dan@elision.design",
+  "name": "vue-code-highlight",
+  "version": "0.1.0",
+  "author": "Jan Bílek",
+  "email": "honza@elision.design",
   "url": "https://elision.design/",
   "private": false,
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elisiondesign/vue-codedepen"
+    "url": "git+https://github.com/elisiondesign/vue-code-highlight"
   },
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build --dest demo",
     "build-bundle": "npm run build:umd & npm run build:es & npm run build:unpkg",
-    "build:umd": "rollup --config rollup.config.js --format umd --file dist/vue-codepen.umd.js",
-    "build:es": "rollup --config rollup.config.js --format es --file dist/vue-codepen.esm.js",
-    "build:unpkg": "rollup --config rollup.config.js --format iife --file dist/vue-codepen.min.js",
+    "build:umd": "rollup --config rollup.config.js --format umd --file dist/vue-code-highlight.umd.js",
+    "build:es": "rollup --config rollup.config.js --format es --file dist/vue-code-highlight.esm.js",
+    "build:unpkg": "rollup --config rollup.config.js --format iife --file dist/vue-code-highlight.min.js",
     "lint": "vue-cli-service lint",
     "deploy": "git subtree push --prefix demo origin gh-pages"
   },
   "dependencies": {
+    "prismjs": "^1.15.0",
     "vue": "^2.5.16"
   },
   "devDependencies": {
@@ -34,16 +35,16 @@
     "eslint-plugin-import": "^2.13.0",
     "vue-template-compiler": "^2.5.16"
   },
-  "main": "dist/vue-codepen.umd.js",
-  "module": "dist/vue-codepen.esm.js",
-  "unpkg": "dist/vue-codepen.min.js",
+  "main": "dist/vue-code-highlight.umd.js",
+  "module": "dist/vue-code-highlight.esm.js",
+  "unpkg": "dist/vue-code-highlight.min.js",
   "browser": {
-    "./sfc": "src/Codepen.vue"
+    "./sfc": "src/CodeHighlight.vue"
   },
   "keywords": [
     "Vue",
-    "Codepen",
-    "Embedded pens"
+    "Code highlight",
+    "Prism"
   ],
   "eslintConfig": {
     "root": true,
