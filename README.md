@@ -1,4 +1,4 @@
-# vue-beautiful-code-highlight
+# vue-code-highlight
 
 > Beautiful code syntax highlighting as Vue.js component.
 
