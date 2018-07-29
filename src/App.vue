@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <pre class="language-javascript">
       <code>
         let isPalindrome = (word) => {
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import Prism from 'prismjs';
+import Prism from './prism';
 import CodeHighlight from './CodeHighlight.vue';
 
 export default {
@@ -41,6 +41,9 @@ export default {
   },
   data() {
     return {};
+  },
+  mounted() {
+    Prism.highlightAll();
   },
 };
 </script>
