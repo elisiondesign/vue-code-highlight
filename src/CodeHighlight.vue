@@ -1,9 +1,11 @@
 <template>
-  <pre ref="code" :class="languageClass">
+<div ref="codeBlock">
+  <pre :class="languageClass">
     <code>
       <slot></slot>
     </code>
   </pre>
+</div>
 </template>
 
 <script>
@@ -23,7 +25,7 @@ export default {
     },
   },
   mounted() {
-    Prism.highlightElement(this.$refs.code);
+    Prism.highlightAllUnder(this.$refs.codeBlock);
   },
 };
 </script>
