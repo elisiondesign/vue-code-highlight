@@ -61,4 +61,4 @@ In order to visually higlight your code, you need to select a theme from `./node
 
 
 ## Examples:
-![screenshot](/src/assets/screenshot.png)
+![screenshot](/src/public/screenshot.png)
