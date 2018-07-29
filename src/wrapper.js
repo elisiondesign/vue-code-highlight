@@ -7,7 +7,7 @@ export function install(Vue) {
   if (install.installed) return;
   install.installed = true;
   Vue.component('VueCodeHighlight', vueHighlight);
-  Vue.directive('code', registerDirective);
+  Vue.directive('highlight', registerDirective);
 }
 
 // Create module definition for Vue.use()
