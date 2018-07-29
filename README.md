@@ -61,3 +61,4 @@ To give the highlighter a window look in a directive mode, also don't forget to 
 
 ## Themes
 In order to visually higlight your code, you need to select a theme from `./node_modules/vue-code-highlight/themes/` and import it somewhere into your component/application. These are just regular prism themes, so feel free to improvise.
+![themes](/public/themes.png)
