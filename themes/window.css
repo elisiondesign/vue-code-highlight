@@ -1,9 +1,9 @@
-pre[class*="language-"] {
+div pre[class*="language-"] {
   display: inline-block;
   padding-right: 10em;
   padding-top: 3rem;
   border-radius: 6px;
-  background-image: url("./assets/window-controls.svg");
+  background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14"><g fill="none" fillRule="evenodd" transform="translate(1 1)"><circle cx="6" cy="6" r="6" fill="%23FF5F56" stroke="%23E0443E" strokeWidth=".5" /><circle cx="26" cy="6" r="6" fill="%23FFBD2E" stroke="%23DEA123" strokeWidth=".5" /><circle cx="46" cy="6" r="6" fill="%2327C93F" stroke="%231AAB29" strokeWidth=".5" /></g></svg>');
   background-repeat: no-repeat;
   background-position: 16px 16px;
   box-shadow: 5px 5px 15px 0px rgba(50, 50, 50, 0.75);
