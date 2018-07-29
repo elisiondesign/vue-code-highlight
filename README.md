@@ -3,7 +3,7 @@
 > Beautiful code syntax highlighting as Vue.js component.
 
 ## Examples
-![screenshot](/public/screenshot.png)
+![screenshot](/public/screenshot2.png)
 
 ## Usage
 
