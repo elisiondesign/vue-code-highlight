@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pre class="language-javascript">
+    <!-- <pre class="language-javascript">
       <code>
         let isPalindrome = (word) => {
           let [length, result] = [word.length, true];
@@ -13,9 +13,9 @@
 
         module.exports = isPalindrome;
       </code>
-    </pre>
+    </pre> -->
 
-    <!-- <code-highlight>
+    <code-highlight>
       let isPalindrome = (word) => {
           let [length, result] = [word.length, true];
 
@@ -26,12 +26,12 @@
         }
 
         module.exports = isPalindrome;
-    </code-highlight> -->
+    </code-highlight>
   </div>
 </template>
 
 <script>
-import Prism from './prism';
+
 import CodeHighlight from './CodeHighlight.vue';
 
 export default {
@@ -41,9 +41,6 @@ export default {
   },
   data() {
     return {};
-  },
-  mounted() {
-    Prism.highlightAll();
   },
 };
 </script>

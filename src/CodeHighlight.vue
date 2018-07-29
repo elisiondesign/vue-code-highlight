@@ -1,5 +1,5 @@
 <template>
-  <pre :class="languageClass">
+  <pre ref="code" :class="languageClass">
     <code>
       <slot></slot>
     </code>
@@ -7,7 +7,8 @@
 </template>
 
 <script>
-// import Prism from 'prismjs';
+import Prism from 'prism-es6';
+
 export default {
   name: 'code-highlight',
   props: {
@@ -20,6 +21,9 @@ export default {
     languageClass() {
       return `language-${this.language}`;
     },
+  },
+  mounted() {
+    Prism.highlightElement(this.$refs.code);
   },
 };
 </script>
