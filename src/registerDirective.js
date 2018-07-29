@@ -1,7 +1,7 @@
 import Prism from 'prism-es6';
 
 export default {
-  update(el) {
+  bind(el) {
     Prism.highlightAllUnder(el);
   },
 };
