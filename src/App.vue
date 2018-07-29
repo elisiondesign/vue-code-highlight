@@ -18,6 +18,7 @@
 <script>
 
 import CodeHighlight from './CodeHighlight.vue';
+import '../themes/duotone-sea.css';
 
 export default {
   name: 'app',
