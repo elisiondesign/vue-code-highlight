@@ -4,7 +4,6 @@ import registerDirective from './registerDirective';
 
 // Declare install function executed by Vue.use()
 function install(Vue) {
-  console.log('Install');
   if (install.installed) return;
   install.installed = true;
   Vue.component('VueCodeHighlight', vueHighlight);
@@ -28,4 +27,4 @@ if (GlobalVue) {
 }
 
 // To allow use as module (npm/webpack/etc.) export component
-export default plugin;
+export default vueHighlight;
