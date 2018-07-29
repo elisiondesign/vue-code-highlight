@@ -2,6 +2,9 @@
 
 > Beautiful code syntax highlighting as Vue.js component.
 
+## Examples
+![screenshot](/public/screenshot.png)
+
 ## Usage
 
 ```
@@ -56,9 +59,5 @@ Every node under the article component having the following structure will be sy
 ```
 To give the highlighter a window look in a directive mode, also don't forget to include the `./node_modules/vue-code-highlight/themes/window.css` file somewhere in your app.
 
-### Themes
+## Themes
 In order to visually higlight your code, you need to select a theme from `./node_modules/vue-code-highlight/themes/` and import it somewhere into your component/application. These are just regular prism themes, so feel free to improvise.
-
-
-## Examples:
-![screenshot](/public/screenshot.png)
