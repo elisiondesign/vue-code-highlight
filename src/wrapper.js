@@ -6,7 +6,6 @@ import registerDirective from './registerDirective';
 export default function install(Vue) {
   if (install.installed) return;
   install.installed = true;
-  Vue.component('VueCodeHighlight', component);
   Vue.directive('highlight', registerDirective);
 }
 
