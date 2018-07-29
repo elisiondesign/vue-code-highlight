@@ -13,7 +13,7 @@ Now, you can use this module in two diferrent ways, as a component or as a direc
 ### Component
 In any component:
 
-```
+```js
 // You have to extract the component from the module
 import { component as VueCodeHighlight } from 'vue-code-highlight';
 
@@ -23,7 +23,7 @@ components:{
 }
 ```
 
-```
+```html
 <vue-code-highlight>
  //Paste your code here
 </vue-code-highlight>
@@ -61,4 +61,4 @@ In order to visually higlight your code, you need to select a theme from `./node
 
 
 ## Examples:
-![screenshot](/src/public/screenshot.png)
+![screenshot](/public/screenshot.png)
