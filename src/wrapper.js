@@ -4,6 +4,7 @@ import registerDirective from './registerDirective';
 
 // Declare install function executed by Vue.use()
 export function install(Vue) {
+  console.log('Install');
   if (install.installed) return;
   install.installed = true;
   Vue.component('VueCodeHighlight', vueHighlight);
