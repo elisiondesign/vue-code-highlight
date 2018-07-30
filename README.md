@@ -44,11 +44,11 @@ Vue.use(VueCodeHighlight) //registers the v-highlight directive
 And then in any Vue component:
 
 ```html
-<article v-highlight >
+<div v-highlight >
  ...
-</article>
+</div>
 ```
-Every node under the article component having the following structure will be syntax highlighted.
+All markup under the div element having the following structure will be syntax highlighted.
 
 ```html
 <pre class="language-javascript">
@@ -57,6 +57,7 @@ Every node under the article component having the following structure will be sy
   </code>
 </pre>
 ```
+
 To give the highlighter a window look in a directive mode, also don't forget to include the `./node_modules/vue-code-highlight/themes/window.css` file somewhere in your app.
 
 ## Themes
