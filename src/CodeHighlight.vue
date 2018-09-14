@@ -29,6 +29,3 @@ export default {
   },
 };
 </script>
-<style language="scss">
-@import '../themes/window.css';
-</style>
