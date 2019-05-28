@@ -21,7 +21,7 @@
     "deploy": "git subtree push --prefix demo origin gh-pages"
   },
   "dependencies": {
-    "prism-es6": "^1.1.1",
+    "prism-es6": "^1.2.0",
     "vue": "^2.5.16"
   },
   "devDependencies": {
