@@ -31,6 +31,8 @@ components:{
  //Paste your code here
 </vue-code-highlight>
 ```
+Your content will be highlighted dynamically when it updates.
+
 Window styles are already present in a component mode, but you will need to select and include a theme to properly highlight your code. (See the themes section.)
 
 ### Directive
