@@ -1,5 +1,15 @@
 <template>
   <div>
+    <div>
+      <h3>Dynamically update code:</h3>
+      <textarea v-model="dynamicCode"></textarea>
+      <code-highlight>
+        {{dynamicCode}}
+      </code-highlight>
+    </div>
+    
+    <hr />
+    
     <code-highlight>
       let isPalindrome = (word) => {
           let [length, result] = [word.length, true];
@@ -25,7 +35,9 @@ export default {
     CodeHighlight,
   },
   data() {
-    return {};
+    return {
+      dynamicCode: '<div>Type here to see me change below</div>'
+    };
   },
 };
 </script>
@@ -37,6 +49,10 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+}
+textarea {
+  width:400px;
+  height:200px;
 }
 @import '../themes/duotone-sea.css';
 @import '../themes/window.css';
