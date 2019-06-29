@@ -24,10 +24,10 @@ export default {
     Prism.highlightAllUnder(this.$refs.codeBlock);
   },
 
-  beforeUpdate () {
-    const newText = this.$slots.default[0].text.replace(/^[\r\n\s]*|[\r\n\s]*$/g, "");
+  beforeUpdate() {
+    const newText = this.$slots.default[0].text.replace(/^[\r\n\s]*|[\r\n\s]*$/g, '');
     this.$el.querySelector('code').textContent = newText;
     Prism.highlightAllUnder(this.$refs.codeBlock);
-  }
+  },
 };
 </script>

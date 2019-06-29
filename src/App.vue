@@ -1,15 +1,4 @@
 <template>
-  <div>
-    <div>
-      <h3>Dynamically update code:</h3>
-      <textarea v-model="dynamicCode"></textarea>
-      <code-highlight>
-        {{dynamicCode}}
-      </code-highlight>
-    </div>
-    
-    <hr />
-    
     <code-highlight>
       let isPalindrome = (word) => {
           let [length, result] = [word.length, true];
@@ -22,7 +11,6 @@
 
         module.exports = isPalindrome;
     </code-highlight>
-  </div>
 </template>
 
 <script>
@@ -36,7 +24,7 @@ export default {
   },
   data() {
     return {
-      dynamicCode: '<div>Type here to see me change below</div>'
+      dynamicCode: '<div>Type here to see me change below</div>',
     };
   },
 };
@@ -50,10 +38,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-textarea {
-  width:400px;
-  height:200px;
-}
-@import '../themes/duotone-sea.css';
-@import '../themes/window.css';
+@import "../themes/duotone-sea.css";
+@import "../themes/window.css";
 </style>
