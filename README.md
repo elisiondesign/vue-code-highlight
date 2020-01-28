@@ -3,6 +3,7 @@
 > Beautiful code syntax highlighting as Vue.js component.
 
 ## Examples
+https://codesandbox.io/s/vue-code-highlight-example-63h5m
 ![screenshot](/public/screenshot2.png)
 
 ## Usage
