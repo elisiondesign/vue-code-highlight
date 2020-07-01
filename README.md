@@ -28,12 +28,17 @@ components:{
 ```
 
 ```html
-<vue-code-highlight>
+<vue-code-highlight language="javascript">
   <pre>
  //Paste your code here
  </pre>
 </vue-code-highlight>
 ```
+**Props**
+|Prop          |Description
+|:--------------|:------------------------------------------|
+| **language** | Pass language name you want to highlight. Options: https://prismjs.com/#supported-languages |
+
 Your content will be highlighted dynamically when it updates. 
 
 The `<pre>` tag is required to preserve newline characters (They're stripped by default in Vue).
