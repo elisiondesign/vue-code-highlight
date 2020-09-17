@@ -5,7 +5,7 @@
   "email": "honza@elision.design",
   "url": "https://elision.design/",
   "private": false,
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/elisiondesign/vue-code-highlight"
