@@ -1,5 +1,6 @@
 div pre[class*="language-"] {
   display: inline-block;
+  width: 100%;
   padding-right: 10em;
   padding-top: 3rem;
   border-radius: 6px;
