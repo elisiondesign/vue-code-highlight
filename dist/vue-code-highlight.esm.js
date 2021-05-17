@@ -785,9 +785,11 @@ var CodeHighlight = {render: function(){var _vm=this;var _h=_vm.$createElement;v
   },
 
   beforeUpdate: function beforeUpdate() {
-    var newText = this.$slots.default[0].text.replace(/^[\r\n\s]*|[\r\n\s]*$/g, '');
-    this.$el.querySelector('code').textContent = newText;
-    Prism.highlightAllUnder(this.$refs.codeBlock);
+    if(this.$slots.default[0].text){
+	    var newText = this.$slots.default[0].text.replace(/^[\r\n\s]*|[\r\n\s]*$/g, '');
+	    this.$el.querySelector('code').textContent = newText;
+	    Prism.highlightAllUnder(this.$refs.codeBlock);
+    }
   },
 };
 
